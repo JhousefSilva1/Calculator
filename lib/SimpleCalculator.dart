@@ -1,5 +1,5 @@
 
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, unused_local_variable, unnecessary_new, prefer_const_constructors, duplicate_ignore, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
@@ -31,8 +31,10 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
           equation = "0";
         }
 
+      // ignore: duplicate_ignore
       }else if (buttonText == "="){
         double equationFontSize = 38.0;
+        // ignore: unused_local_variable
         double resultFontSize = 48.0;
 
         expression = equation;
@@ -73,7 +75,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
           style: TextStyle(
             fontSize: 32.0,
             fontWeight: FontWeight.normal,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
         onPressed: () => buttonPressed(buttonText),
@@ -95,7 +97,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Calculator UCB')),
+      appBar: AppBar(title: Text('Simple Calculator UCB')),
       body: Column(
         children: <Widget>[
           Container(
@@ -123,9 +125,10 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                   children: [
                     TableRow(
                         children: [
-                          buildButton("C", 1, Colors.blueAccent ),
-                          buildButton("AC", 1, Color.fromARGB(255, 196, 147, 13) ),
-                          buildButton("/", 1, Colors.redAccent ),
+                          
+                          buildButton("C", 1, Colors.orange),
+                          buildButton("AC", 1, Colors.orange ),
+                          buildButton("%", 1, Colors.orange ),
 
 
                         ]
@@ -133,36 +136,36 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
 
                     TableRow(
                         children: [
-                          buildButton("7", 1, Colors.black ),
-                          buildButton("8", 1, Colors.black ),
-                          buildButton("9", 1, Colors.black ),
+                          buildButton("7", 1, Colors.white ),
+                          buildButton("8", 1, Colors.white ),
+                          buildButton("9", 1, Colors.white ),
 
 
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton("4", 1, Colors.black ),
-                          buildButton("5", 1, Colors.black ),
-                          buildButton("6", 1, Colors.black ),
+                          buildButton("4", 1, Colors.white ),
+                          buildButton("5", 1, Colors.white ),
+                          buildButton("6", 1, Colors.white ),
 
 
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton("1", 1, Colors.black ),
-                          buildButton("2", 1, Colors.black ),
-                          buildButton("3", 1, Colors.black ),
+                          buildButton("1", 1, Colors.white ),
+                          buildButton("2", 1, Colors.white ),
+                          buildButton("3", 1, Colors.white ),
 
 
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton(".", 1, Colors.black ),
-                          buildButton("0", 1, Colors.black ),
-                          buildButton("00", 1, Colors.black ),
+                          buildButton(".", 1, Colors.white ),
+                          buildButton("0", 1, Colors.white ),
+                          buildButton("00", 1, Colors.white ),
 
 
                         ]
@@ -177,27 +180,27 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                   children: [
                     TableRow(
                         children: [
-                          buildButton("*",1,Colors.blue),
+                          buildButton("X",1,Colors.orange),
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton("-",1,Colors.blue),
+                          buildButton("",1,Colors.orange),
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton("+",1,Colors.blue),
+                          buildButton("+",1,Colors.orange),
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton("/",1,Colors.blue),
+                          buildButton("/",1,Colors.orange),
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton("=",1,Colors.redAccent),
+                          buildButton("=",1,Colors.orange),
                         ]
                     )
                   ],
