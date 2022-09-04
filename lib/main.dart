@@ -1,23 +1,20 @@
-// ignore_for_file: use_key_in_widget_constructors, depend_on_referenced_packages
-
+import 'package:calculator/screens/calculator_screen.dart';
+import 'package:calculator/screens/calculator_screen.dart';
 import 'package:flutter/material.dart';
 
-
-import 'SimpleCalculator.dart';
-
-void main() {
-  runApp(Calculator());
-}
-
-class Calculator extends StatelessWidget {
+ 
+void main() => runApp(MyApp());
+ 
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Calculator',
-      theme: ThemeData(primaryColor: Colors.amber),
-      home: SimpleCalculator(),
+      title: 'Material App',
+      home: CalculatorScreen(),
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: Colors.black
+      ),
     );
   }
 }
-

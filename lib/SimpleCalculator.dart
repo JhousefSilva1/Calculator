@@ -1,6 +1,6 @@
 
 // ignore_for_file: library_private_types_in_public_api, unused_local_variable, unnecessary_new, prefer_const_constructors, duplicate_ignore, sized_box_for_whitespace
-
+/*
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 // ignore: use_key_in_widget_constructors
@@ -213,4 +213,4 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
       ),
     );
   }
-}
+}*/
