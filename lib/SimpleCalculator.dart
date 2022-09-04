@@ -180,12 +180,12 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                   children: [
                     TableRow(
                         children: [
-                          buildButton("X",1,Colors.orange),
+                          buildButton("*",1,Colors.orange),
                         ]
                     ),
                     TableRow(
                         children: [
-                          buildButton("",1,Colors.orange),
+                          buildButton("-",1,Colors.orange),
                         ]
                     ),
                     TableRow(
